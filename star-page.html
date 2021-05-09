@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="javascripts/toggle.js" defer></script>
+	<script src="javascripts/diffModes.js" defer></script>
+	<script src="javascripts/popup.js" defer></script>
+	<script src="javascripts/card.js" defer></script>
+	<script src="javascripts/board.js" defer></script>
+	<script src="javascripts/game-logic.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/board.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Game of Set</title>
+</head>
+<body>
+	<div id="everything" style="display: block">
+		<div class="start-logo">
+			<img src="images/set2.png" alt="image of sample set">
+			<img src = "images/logo.png" alt="logo"> 
+			<img src="images/set2.png" alt="image of sample set">
+		</div>
+		<div id = "startbtn">
+			<button id="start-btn"> Start Game </button>
+		 </div>
+		<div id="difficulty-modes" style="display: none">
+			<button class="modeBtns" id="easy">Easy</button>
+			<button class="modeBtns" id="medium">Medium</button>
+			<button class="modeBtns" id="hard">Hard</button>
+		</div>
+		<div id="mainGameContainer">
+			<div id="gameCardsContainer">
+				<div class="game-frame">
+			        <div class="board">
+			            <div class="grid-column">
+			                <div id="row1" class="grid-row">
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div id='canvasContainer'>
+				<div>
+					<canvas id="canvas" width="250" height ="250"></canvas>
+				</div>
+				<div id="gameControlPanel">
+					<div id="scoreboard">Score: 0pts</div>
+					<button id="evaluate">Evaluate</button>
+					<button id="hint">Hint</button>
+					<button id="addCards">Add Cards</button>
+					<button id="endGame">End Game</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="pops" style="display: none">
+	     <div class="popupBackground">
+		<div class="popup">
+		    <div class="title">
+		        <h2>Game Over!</h2>
+		    </div>
+		    <p><br>Your final score is: <span id="score">00</span> pt(s)</p>
+		    <p>To replay: refresh the page</p>
+		</div>
+	    </div>
+	</div>
+</body>
+</html>
