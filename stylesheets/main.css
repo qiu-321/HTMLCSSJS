@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+    background: none;
+    border: none;   
+    outline: none;     
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+	background-color: #132515
+}
+
+#canvasContainer {
+    width: 250px;
+	height: 540px;
+    display: none;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	border-left: 1px solid white;
+}
+
+canvas {
+    display: block;
+	width: 250px;
+	height: 250px;
+	clear: both;
+}
+
+#timerBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainGameContainer {
+	width: 1200px;
+	margin: auto;
+	border: 2px solid white;
+	color: white;
+	display:  none;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	justify-self: center;
+	padding: 5px 10px;
+	height: 540px;
+}
+
+#gameCardsContainer {
+	width: 900px;
+	height: 100%;
+}
+
+#gameControlPanel {
+	height: 250px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#gameControlPanel button {
+	color: black;
+	width: 40%;
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 1em;
+}
+
+#gameControlPanel button:hover {
+	cursor: pointer;
+	
+}
+
+.popupBackground {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.popup {
+    max-width: 45%;
+    min-width: 40%;
+    height: 30%;
+    margin: auto;
+    color: black;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.title {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #4dffff;
+}
+
+p{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+span.player{
+    font-weight: bold;
+    color: rgb(255, 0, 102)
+}
+
+.start-logo{
+	padding-top: 40px;
+	text-align: center;
+}
+
+#scoreboard {
+	font-weight: bold;
+	font-size: 27px;
+}
+
+#start-btn,#start-btn-easy,#start-btn-difficult,#easy,#medium,#hard,#evaluate,#addCards,#endGame,#hint {
+  margin: auto;
+  display: inline-block;
+  padding: 30px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #4dffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#start-btn:hover,#start-btn-easy:hover,#start-btn-difficult:hover,#evaluate:hover,#addCards:hover,#endGame:hover,#hint:hover,#easy:hover,#medium:hover,#hard:hover {
+	background-color: white
+}
+
+#start-btn:active,#start-btn-easy:active,#start-btn-difficult:active,#evaluate:active,#addCards:active,#endGame:active,#hint:active,#easy:active, #medium:active, #hard:active {
+  background-color: #4dffff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#startbtn{
+	padding-top: 100px ;
+	text-align: center;
+}
+
+#startbtn1{
+	padding-top: 100px ;
+	text-align: center ;
+}
+
+#startbtn1 button{
+	margin: 1em;
+	width: 20%;
+}
+
+#difficulty-modes{
+	padding-top: 100px;
+	text-align: center;
+}
+
+#difficulty-modes button{
+
+	margin: 1em;
+	width: 20%;
+}
+
+#game-panel{
+	width: 60%;
+	height:300px;
+	background-color: white;
+}
+
+#game-board-buttons{
+	float:right;
+}

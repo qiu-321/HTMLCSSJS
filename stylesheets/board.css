@@ -1,0 +1,84 @@
+.game-frame {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 10pt;
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+.game-frame .board {
+	/*border: 1px solid black;*/
+}
+
+.game-frame .grid-column {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.game-frame .grid-row {
+	margin: 1em;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	align-content: space-around;
+	-webkit-align-content: space-around;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+.game-frame .grid-column, .game-frame .grid-row {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	position: relative;
+}
+
+.card {
+	flex: 1 1 14.28%;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+.img-wrap {
+	position: relative;
+	margin: auto;
+	width: 81px;
+	height: 144px;
+	border: 1px solid black;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.selected .overlay {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.img-wrap:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.game-frame .widget-box {
+  overflow: visible;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.game-frame .widget {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.game-frame .widget button {
+  margin: 1em;
+}
