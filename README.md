@@ -1,13 +1,3 @@
-# ruby_rangers-jsset
-
-CSE 3901, Project 5: JavaScript Game of Set
-
-Team name: Ruby Rangers 
-
-Team members: Alex Wollam, Anusriti Das, Mitali Joshi, Orfilia Qiu, Zahra Naseer
-
-Project Description:  Implement the game of Set using Javascript.
-
 Summary of the game: A deck of 81 cards, each card is of the combination of the following attributes(there is no repeating card in the deck): -Color: red, purple, green -Shape: diamond, squiggle, oval -Shading: solid, open, striped -Number of the shapes: 1, 2, 3
 
 A player's task is to form a valid set of 3 cards.
